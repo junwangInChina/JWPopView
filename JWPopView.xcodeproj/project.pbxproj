@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		322D5C517C882C098C5EFB7A /* libPods-JWPopView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7093476083BF082DCA98BD87 /* libPods-JWPopView.a */; };
+		DABF3DAD1D1CB72C00E2C911 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DABF3DAC1D1CB72C00E2C911 /* main.m */; };
+		DABF3DB01D1CB72C00E2C911 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DABF3DAF1D1CB72C00E2C911 /* AppDelegate.m */; };
+		DABF3DB31D1CB72C00E2C911 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DABF3DB21D1CB72C00E2C911 /* ViewController.m */; };
+		DABF3DB61D1CB72C00E2C911 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DABF3DB41D1CB72C00E2C911 /* Main.storyboard */; };
+		DABF3DB81D1CB72C00E2C911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABF3DB71D1CB72C00E2C911 /* Assets.xcassets */; };
+		DABF3DBB1D1CB72C00E2C911 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DABF3DB91D1CB72C00E2C911 /* LaunchScreen.storyboard */; };
+		DABF3DC61D1CB72C00E2C911 /* JWPopViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DABF3DC51D1CB72C00E2C911 /* JWPopViewTests.m */; };
+		DABF3DD11D1CB72C00E2C911 /* JWPopViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DABF3DD01D1CB72C00E2C911 /* JWPopViewUITests.m */; };
+		DABF3DE11D1CB7E500E2C911 /* JWPopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DABF3DE01D1CB7E500E2C911 /* JWPopWindow.m */; };
+		DABF3DE41D1CB7F300E2C911 /* JWPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = DABF3DE31D1CB7F300E2C911 /* JWPopView.m */; };
+		DABF3DE71D1CBCC300E2C911 /* JWPopCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DABF3DE61D1CBCC300E2C911 /* JWPopCategory.m */; };
+		DABF3DEA1D1D047B00E2C911 /* JWAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = DABF3DE91D1D047B00E2C911 /* JWAlertView.m */; };
+		DABF3DED1D1D062200E2C911 /* JWPopItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DABF3DEC1D1D062200E2C911 /* JWPopItem.m */; };
+		DABF3DF01D1D178500E2C911 /* JWSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = DABF3DEF1D1D178500E2C911 /* JWSheetView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DABF3DC21D1CB72C00E2C911 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DABF3DA01D1CB72C00E2C911 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DABF3DA71D1CB72C00E2C911;
+			remoteInfo = JWPopView;
+		};
+		DABF3DCD1D1CB72C00E2C911 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DABF3DA01D1CB72C00E2C911 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DABF3DA71D1CB72C00E2C911;
+			remoteInfo = JWPopView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		125B3B2AE8BBB70984A76E25 /* Pods-JWPopView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWPopView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWPopView/Pods-JWPopView.debug.xcconfig"; sourceTree = "<group>"; };
+		7093476083BF082DCA98BD87 /* libPods-JWPopView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWPopView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		979BE1D46CECF2E5BA39B52B /* Pods-JWPopView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWPopView.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWPopView/Pods-JWPopView.release.xcconfig"; sourceTree = "<group>"; };
+		DA33A1461D20D2CA00F8AF55 /* JWPopViewDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWPopViewDefine.h; sourceTree = "<group>"; };
+		DABF3DA81D1CB72C00E2C911 /* JWPopView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWPopView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABF3DAC1D1CB72C00E2C911 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DABF3DAE1D1CB72C00E2C911 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DABF3DAF1D1CB72C00E2C911 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DABF3DB11D1CB72C00E2C911 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DABF3DB21D1CB72C00E2C911 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DABF3DB51D1CB72C00E2C911 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DABF3DB71D1CB72C00E2C911 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DABF3DBA1D1CB72C00E2C911 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DABF3DBC1D1CB72C00E2C911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DABF3DC11D1CB72C00E2C911 /* JWPopViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JWPopViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABF3DC51D1CB72C00E2C911 /* JWPopViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWPopViewTests.m; sourceTree = "<group>"; };
+		DABF3DC71D1CB72C00E2C911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DABF3DCC1D1CB72C00E2C911 /* JWPopViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JWPopViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABF3DD01D1CB72C00E2C911 /* JWPopViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWPopViewUITests.m; sourceTree = "<group>"; };
+		DABF3DD21D1CB72C00E2C911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DABF3DDF1D1CB7E500E2C911 /* JWPopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWPopWindow.h; sourceTree = "<group>"; };
+		DABF3DE01D1CB7E500E2C911 /* JWPopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWPopWindow.m; sourceTree = "<group>"; };
+		DABF3DE21D1CB7F300E2C911 /* JWPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWPopView.h; sourceTree = "<group>"; };
+		DABF3DE31D1CB7F300E2C911 /* JWPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWPopView.m; sourceTree = "<group>"; };
+		DABF3DE51D1CBCC300E2C911 /* JWPopCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWPopCategory.h; sourceTree = "<group>"; };
+		DABF3DE61D1CBCC300E2C911 /* JWPopCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWPopCategory.m; sourceTree = "<group>"; };
+		DABF3DE81D1D047B00E2C911 /* JWAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWAlertView.h; sourceTree = "<group>"; };
+		DABF3DE91D1D047B00E2C911 /* JWAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWAlertView.m; sourceTree = "<group>"; };
+		DABF3DEB1D1D062100E2C911 /* JWPopItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWPopItem.h; sourceTree = "<group>"; };
+		DABF3DEC1D1D062200E2C911 /* JWPopItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWPopItem.m; sourceTree = "<group>"; };
+		DABF3DEE1D1D178500E2C911 /* JWSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWSheetView.h; sourceTree = "<group>"; };
+		DABF3DEF1D1D178500E2C911 /* JWSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWSheetView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DABF3DA51D1CB72C00E2C911 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				322D5C517C882C098C5EFB7A /* libPods-JWPopView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABF3DBE1D1CB72C00E2C911 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABF3DC91D1CB72C00E2C911 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E9FFB6B0C1412C51C0B6595 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7093476083BF082DCA98BD87 /* libPods-JWPopView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE077C3FAD31C678AC163CCE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				125B3B2AE8BBB70984A76E25 /* Pods-JWPopView.debug.xcconfig */,
+				979BE1D46CECF2E5BA39B52B /* Pods-JWPopView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DABF3D9F1D1CB72C00E2C911 = {
+			isa = PBXGroup;
+			children = (
+				DABF3DAA1D1CB72C00E2C911 /* JWPopView */,
+				DABF3DC41D1CB72C00E2C911 /* JWPopViewTests */,
+				DABF3DCF1D1CB72C00E2C911 /* JWPopViewUITests */,
+				DABF3DA91D1CB72C00E2C911 /* Products */,
+				AE077C3FAD31C678AC163CCE /* Pods */,
+				0E9FFB6B0C1412C51C0B6595 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DABF3DA91D1CB72C00E2C911 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DABF3DA81D1CB72C00E2C911 /* JWPopView.app */,
+				DABF3DC11D1CB72C00E2C911 /* JWPopViewTests.xctest */,
+				DABF3DCC1D1CB72C00E2C911 /* JWPopViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DABF3DAA1D1CB72C00E2C911 /* JWPopView */ = {
+			isa = PBXGroup;
+			children = (
+				DABF3DDE1D1CB74900E2C911 /* JWPopView */,
+				DABF3DAE1D1CB72C00E2C911 /* AppDelegate.h */,
+				DABF3DAF1D1CB72C00E2C911 /* AppDelegate.m */,
+				DABF3DB11D1CB72C00E2C911 /* ViewController.h */,
+				DABF3DB21D1CB72C00E2C911 /* ViewController.m */,
+				DABF3DB41D1CB72C00E2C911 /* Main.storyboard */,
+				DABF3DB71D1CB72C00E2C911 /* Assets.xcassets */,
+				DABF3DB91D1CB72C00E2C911 /* LaunchScreen.storyboard */,
+				DABF3DBC1D1CB72C00E2C911 /* Info.plist */,
+				DABF3DAB1D1CB72C00E2C911 /* Supporting Files */,
+			);
+			path = JWPopView;
+			sourceTree = "<group>";
+		};
+		DABF3DAB1D1CB72C00E2C911 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DABF3DAC1D1CB72C00E2C911 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DABF3DC41D1CB72C00E2C911 /* JWPopViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				DABF3DC51D1CB72C00E2C911 /* JWPopViewTests.m */,
+				DABF3DC71D1CB72C00E2C911 /* Info.plist */,
+			);
+			path = JWPopViewTests;
+			sourceTree = "<group>";
+		};
+		DABF3DCF1D1CB72C00E2C911 /* JWPopViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DABF3DD01D1CB72C00E2C911 /* JWPopViewUITests.m */,
+				DABF3DD21D1CB72C00E2C911 /* Info.plist */,
+			);
+			path = JWPopViewUITests;
+			sourceTree = "<group>";
+		};
+		DABF3DDE1D1CB74900E2C911 /* JWPopView */ = {
+			isa = PBXGroup;
+			children = (
+				DABF3DE21D1CB7F300E2C911 /* JWPopView.h */,
+				DABF3DE31D1CB7F300E2C911 /* JWPopView.m */,
+				DABF3DDF1D1CB7E500E2C911 /* JWPopWindow.h */,
+				DABF3DE01D1CB7E500E2C911 /* JWPopWindow.m */,
+				DABF3DE51D1CBCC300E2C911 /* JWPopCategory.h */,
+				DABF3DE61D1CBCC300E2C911 /* JWPopCategory.m */,
+				DABF3DEB1D1D062100E2C911 /* JWPopItem.h */,
+				DABF3DEC1D1D062200E2C911 /* JWPopItem.m */,
+				DABF3DE81D1D047B00E2C911 /* JWAlertView.h */,
+				DABF3DE91D1D047B00E2C911 /* JWAlertView.m */,
+				DABF3DEE1D1D178500E2C911 /* JWSheetView.h */,
+				DABF3DEF1D1D178500E2C911 /* JWSheetView.m */,
+				DA33A1461D20D2CA00F8AF55 /* JWPopViewDefine.h */,
+			);
+			path = JWPopView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DABF3DA71D1CB72C00E2C911 /* JWPopView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DABF3DD51D1CB72C00E2C911 /* Build configuration list for PBXNativeTarget "JWPopView" */;
+			buildPhases = (
+				8528DA3422208A627F8F9D3D /* 📦 Check Pods Manifest.lock */,
+				DABF3DA41D1CB72C00E2C911 /* Sources */,
+				DABF3DA51D1CB72C00E2C911 /* Frameworks */,
+				DABF3DA61D1CB72C00E2C911 /* Resources */,
+				CD6FAD37594C3FF39D0B74AB /* 📦 Embed Pods Frameworks */,
+				197AD80E421B9AA9CE62BEDA /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JWPopView;
+			productName = JWPopView;
+			productReference = DABF3DA81D1CB72C00E2C911 /* JWPopView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DABF3DC01D1CB72C00E2C911 /* JWPopViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DABF3DD81D1CB72C00E2C911 /* Build configuration list for PBXNativeTarget "JWPopViewTests" */;
+			buildPhases = (
+				DABF3DBD1D1CB72C00E2C911 /* Sources */,
+				DABF3DBE1D1CB72C00E2C911 /* Frameworks */,
+				DABF3DBF1D1CB72C00E2C911 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DABF3DC31D1CB72C00E2C911 /* PBXTargetDependency */,
+			);
+			name = JWPopViewTests;
+			productName = JWPopViewTests;
+			productReference = DABF3DC11D1CB72C00E2C911 /* JWPopViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DABF3DCB1D1CB72C00E2C911 /* JWPopViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DABF3DDB1D1CB72C00E2C911 /* Build configuration list for PBXNativeTarget "JWPopViewUITests" */;
+			buildPhases = (
+				DABF3DC81D1CB72C00E2C911 /* Sources */,
+				DABF3DC91D1CB72C00E2C911 /* Frameworks */,
+				DABF3DCA1D1CB72C00E2C911 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DABF3DCE1D1CB72C00E2C911 /* PBXTargetDependency */,
+			);
+			name = JWPopViewUITests;
+			productName = JWPopViewUITests;
+			productReference = DABF3DCC1D1CB72C00E2C911 /* JWPopViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DABF3DA01D1CB72C00E2C911 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = wangjun;
+				TargetAttributes = {
+					DABF3DA71D1CB72C00E2C911 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					DABF3DC01D1CB72C00E2C911 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = DABF3DA71D1CB72C00E2C911;
+					};
+					DABF3DCB1D1CB72C00E2C911 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = DABF3DA71D1CB72C00E2C911;
+					};
+				};
+			};
+			buildConfigurationList = DABF3DA31D1CB72C00E2C911 /* Build configuration list for PBXProject "JWPopView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DABF3D9F1D1CB72C00E2C911;
+			productRefGroup = DABF3DA91D1CB72C00E2C911 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DABF3DA71D1CB72C00E2C911 /* JWPopView */,
+				DABF3DC01D1CB72C00E2C911 /* JWPopViewTests */,
+				DABF3DCB1D1CB72C00E2C911 /* JWPopViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DABF3DA61D1CB72C00E2C911 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABF3DBB1D1CB72C00E2C911 /* LaunchScreen.storyboard in Resources */,
+				DABF3DB81D1CB72C00E2C911 /* Assets.xcassets in Resources */,
+				DABF3DB61D1CB72C00E2C911 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABF3DBF1D1CB72C00E2C911 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABF3DCA1D1CB72C00E2C911 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		197AD80E421B9AA9CE62BEDA /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWPopView/Pods-JWPopView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8528DA3422208A627F8F9D3D /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CD6FAD37594C3FF39D0B74AB /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWPopView/Pods-JWPopView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DABF3DA41D1CB72C00E2C911 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABF3DE11D1CB7E500E2C911 /* JWPopWindow.m in Sources */,
+				DABF3DE41D1CB7F300E2C911 /* JWPopView.m in Sources */,
+				DABF3DEA1D1D047B00E2C911 /* JWAlertView.m in Sources */,
+				DABF3DE71D1CBCC300E2C911 /* JWPopCategory.m in Sources */,
+				DABF3DB31D1CB72C00E2C911 /* ViewController.m in Sources */,
+				DABF3DED1D1D062200E2C911 /* JWPopItem.m in Sources */,
+				DABF3DB01D1CB72C00E2C911 /* AppDelegate.m in Sources */,
+				DABF3DF01D1D178500E2C911 /* JWSheetView.m in Sources */,
+				DABF3DAD1D1CB72C00E2C911 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABF3DBD1D1CB72C00E2C911 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABF3DC61D1CB72C00E2C911 /* JWPopViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABF3DC81D1CB72C00E2C911 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABF3DD11D1CB72C00E2C911 /* JWPopViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DABF3DC31D1CB72C00E2C911 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DABF3DA71D1CB72C00E2C911 /* JWPopView */;
+			targetProxy = DABF3DC21D1CB72C00E2C911 /* PBXContainerItemProxy */;
+		};
+		DABF3DCE1D1CB72C00E2C911 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DABF3DA71D1CB72C00E2C911 /* JWPopView */;
+			targetProxy = DABF3DCD1D1CB72C00E2C911 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DABF3DB41D1CB72C00E2C911 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DABF3DB51D1CB72C00E2C911 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DABF3DB91D1CB72C00E2C911 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DABF3DBA1D1CB72C00E2C911 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DABF3DD31D1CB72C00E2C911 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DABF3DD41D1CB72C00E2C911 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DABF3DD61D1CB72C00E2C911 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 125B3B2AE8BBB70984A76E25 /* Pods-JWPopView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JWPopView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cloudm.JWPopView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DABF3DD71D1CB72C00E2C911 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 979BE1D46CECF2E5BA39B52B /* Pods-JWPopView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JWPopView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cloudm.JWPopView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DABF3DD91D1CB72C00E2C911 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JWPopViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cloudm.JWPopViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JWPopView.app/JWPopView";
+			};
+			name = Debug;
+		};
+		DABF3DDA1D1CB72C00E2C911 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JWPopViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cloudm.JWPopViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JWPopView.app/JWPopView";
+			};
+			name = Release;
+		};
+		DABF3DDC1D1CB72C00E2C911 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JWPopViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cloudm.JWPopViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JWPopView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DABF3DDD1D1CB72C00E2C911 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JWPopViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cloudm.JWPopViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JWPopView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DABF3DA31D1CB72C00E2C911 /* Build configuration list for PBXProject "JWPopView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABF3DD31D1CB72C00E2C911 /* Debug */,
+				DABF3DD41D1CB72C00E2C911 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DABF3DD51D1CB72C00E2C911 /* Build configuration list for PBXNativeTarget "JWPopView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABF3DD61D1CB72C00E2C911 /* Debug */,
+				DABF3DD71D1CB72C00E2C911 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DABF3DD81D1CB72C00E2C911 /* Build configuration list for PBXNativeTarget "JWPopViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABF3DD91D1CB72C00E2C911 /* Debug */,
+				DABF3DDA1D1CB72C00E2C911 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DABF3DDB1D1CB72C00E2C911 /* Build configuration list for PBXNativeTarget "JWPopViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABF3DDC1D1CB72C00E2C911 /* Debug */,
+				DABF3DDD1D1CB72C00E2C911 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DABF3DA01D1CB72C00E2C911 /* Project object */;
+}

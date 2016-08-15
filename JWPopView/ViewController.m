@@ -44,6 +44,10 @@
     
     JWAlertView *alert = [[JWAlertView alloc] initWithTitle:@"警告" content:@"这是一个弹框警告" items:tempItems];
     [alert show];
+    
+    NSArray *tempItems2 = @[cancelItem,confirmItem];
+    JWAlertView *alert2 = [[JWAlertView alloc] initWithTitle:@"警告" content:@"这是一个弹框警告" items:tempItems2];
+    [alert2 show];
 }
 
 - (IBAction)sheetAction:(id)sender {

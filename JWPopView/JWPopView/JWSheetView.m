@@ -42,6 +42,8 @@
     {
         NSAssert(items.count > 0, @"没有按钮怎么破，加几个呗。");
         
+        self.tag = JWAlertTag;
+        
         JWSheetViewConfig *tempConfig = [JWSheetViewConfig globalConfig];
         
         self.type = JWPopTypeSheet;

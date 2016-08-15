@@ -263,6 +263,12 @@
 #pragma mark - Public Method
 - (void)show
 {
+    // 过滤短时间内多次点击，重复弹出的问题
+    for (UIView *subView in self.attachedView.jw_dimBackgroundView.subviews)
+    {
+        if (JWAlertTag == subView.tag) return;
+        if (JWSheetTag == subView.tag) return;
+    }
     [self showWithBlock:nil];
 }
 

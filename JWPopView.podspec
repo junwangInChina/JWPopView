@@ -3,8 +3,8 @@
 Pod::Spec.new do |s|
 
   s.name         = "JWPopView"
-  s.version      = "0.0.1"
-  s.summary      = "JWPopView，一款自用的弹框控件。"
+  s.version      = "0.0.2"
+  s.summary      = "JWPopView，一款自用的弹框控件。\n1:修改了重复弹出的bug。"
 
   #主页
   s.homepage     = "https://github.com/junwangInChina/JWPopView"
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   #支持版本
   s.platform     = :ios, "7.0"
   #版本地址
-  s.source       = { :git => "https://github.com/junwangInChina/JWPopView.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/junwangInChina/JWPopView.git", :tag => "0.0.2" }
  
 
   #库文件路径（相对于.podspec文件的路径）

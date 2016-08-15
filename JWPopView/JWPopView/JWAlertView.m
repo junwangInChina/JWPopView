@@ -80,6 +80,8 @@
     {
         NSAssert(items.count > 0, @"没有按钮怎么破？");
         
+        self.tag = JWAlertTag;
+        
         JWAlertViewConfig *tempConfig = [JWAlertViewConfig globalConfig];
         
         self.type = JWPopTypeAlert;

@@ -12,6 +12,9 @@
 #define JWStrongify(o)      __strong typeof(self) o = mmwo;
 #define JW_SPLIT_WIDTH      (1/[UIScreen mainScreen].scale)
 
+#define JWAlertTag      520
+#define JWSheetTag      521
+
 typedef NS_ENUM(NSInteger, JWPopType) {
     JWPopTypeAlert,
     JWPopTypeSheet,

@@ -46,6 +46,8 @@
         
         JWSheetViewConfig *tempConfig = [JWSheetViewConfig globalConfig];
         
+        self.attachedView.jw_dimBackgroundView.backgroundColor = tempConfig.attachedViewColor;
+        
         self.type = JWPopTypeSheet;
         self.items = items;
         self.backgroundColor = tempConfig.backgroundColor;
@@ -113,7 +115,7 @@
         [self addSubview:_buttonView];
         [self.buttonView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.and.right.equalTo(self);
-            make.top.equalTo(lastAttribute).with.offset(tempConfig.margin);
+            make.top.equalTo(lastAttribute).with.offset((title.length > 0 || content.length > 0) ? tempConfig.margin : 0);
         }];
         
         __block UIButton *tempFirstButton = nil;
@@ -281,6 +283,8 @@
         self.itemPressedColor   = [UIColor jw_colorWithHex:0xEFEDE7FF];
 
         self.itemTextCancel     = @"取消";
+        
+        self.attachedViewColor = [UIColor jw_colorWithHex:0x0000007F];
     }
     return self;
 }

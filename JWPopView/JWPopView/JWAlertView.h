@@ -151,6 +151,10 @@ typedef void(^JWAlertInputHandler)(NSString *inputText);
  *  Confirm按钮的标题，Default is 确认
  */
 @property (nonatomic, copy) NSString *itemTextConfirm;
+/**
+ *  蒙板颜色，Default is [UIColor jw_colorWithHex:0x0000007F]
+ */
+@property (nonatomic, strong) UIColor *attachedViewColor;
 
 @end
 

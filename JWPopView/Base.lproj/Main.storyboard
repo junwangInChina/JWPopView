@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -19,33 +19,41 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1n-l0-4eQ">
                                 <rect key="frame" x="88" y="84" width="200" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="fgN-8W-F5C"/>
                                     <constraint firstAttribute="height" constant="30" id="l8v-E9-yyH"/>
                                 </constraints>
-                                <state key="normal" title="Alert"/>
+                                <state key="normal" title="Alert Default Color"/>
                                 <connections>
                                     <action selector="alertAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eck-3X-jAz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BzM-Z7-U2q">
                                 <rect key="frame" x="87" y="134" width="200" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Sheet"/>
                                 <connections>
                                     <action selector="sheetAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NC1-lp-sdQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bcy-Y6-lov">
+                                <rect key="frame" x="87" y="184" width="200" height="30"/>
+                                <state key="normal" title="Alert Clear Color"/>
+                                <connections>
+                                    <action selector="alertClearColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xiy-XE-dtP"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Bcy-Y6-lov" firstAttribute="height" secondItem="BzM-Z7-U2q" secondAttribute="height" id="9WV-wt-AeF"/>
                             <constraint firstItem="BzM-Z7-U2q" firstAttribute="top" secondItem="o1n-l0-4eQ" secondAttribute="bottom" constant="20" id="AU8-c9-wYR"/>
+                            <constraint firstItem="Bcy-Y6-lov" firstAttribute="top" secondItem="BzM-Z7-U2q" secondAttribute="bottom" constant="20" id="Ak6-3M-AXu"/>
                             <constraint firstItem="o1n-l0-4eQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="Anu-Kd-8jo"/>
+                            <constraint firstItem="Bcy-Y6-lov" firstAttribute="centerX" secondItem="BzM-Z7-U2q" secondAttribute="centerX" id="BfT-Qz-5g7"/>
                             <constraint firstItem="BzM-Z7-U2q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MTo-LA-lHZ"/>
                             <constraint firstItem="o1n-l0-4eQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PF2-dZ-uFK"/>
                             <constraint firstItem="BzM-Z7-U2q" firstAttribute="height" secondItem="o1n-l0-4eQ" secondAttribute="height" id="jjz-DE-M3t"/>
+                            <constraint firstItem="Bcy-Y6-lov" firstAttribute="width" secondItem="BzM-Z7-U2q" secondAttribute="width" id="ufc-UI-miN"/>
                             <constraint firstItem="BzM-Z7-U2q" firstAttribute="width" secondItem="o1n-l0-4eQ" secondAttribute="width" id="vgH-hw-cf4"/>
                         </constraints>
                     </view>

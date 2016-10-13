@@ -84,6 +84,8 @@
         
         JWAlertViewConfig *tempConfig = [JWAlertViewConfig globalConfig];
         
+        self.attachedView.jw_dimBackgroundView.backgroundColor = tempConfig.attachedViewColor;
+        
         self.type = JWPopTypeAlert;
         self.withKeyboard = (handler != nil);
         
@@ -364,6 +366,8 @@
         self.itemTextOK      = @"好";
         self.itemTextCancel  = @"取消";
         self.itemTextConfirm = @"确定";
+        
+        self.attachedViewColor = [UIColor jw_colorWithHex:0x0000007F];
     }
     return self;
 }

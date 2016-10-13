@@ -12,6 +12,7 @@
 
 #import "JWPopView/JWPopViewDefine.h"
 
+
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *alertButton;
 
@@ -23,6 +24,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -44,6 +46,24 @@
     
     JWAlertView *alert = [[JWAlertView alloc] initWithTitle:@"警告" content:@"这是一个弹框警告" items:tempItems];
     [alert show];
+    
+    [[JWAlertViewConfig globalConfig] setAttachedViewColor:[UIColor jw_colorWithHex:0x0000007F]];
+    
+    NSArray *tempItems2 = @[cancelItem,confirmItem];
+    JWAlertView *alert2 = [[JWAlertView alloc] initWithTitle:@"警告" content:@"这是一个弹框警告" items:tempItems2];
+    [alert2 show];
+}
+
+- (IBAction)alertClearColor:(id)sender {
+    
+    [[JWAlertViewConfig globalConfig] setAttachedViewColor:[UIColor clearColor]];
+    
+    JWPopItem *cancelItem = JWItemMake(@"cancel", JWItemTypeDisable, ^(NSInteger index) {
+        
+    });
+    JWPopItem *confirmItem = JWItemMake(@"Confirm", JWItemTypeHighlight, ^(NSInteger index) {
+        
+    });
     
     NSArray *tempItems2 = @[cancelItem,confirmItem];
     JWAlertView *alert2 = [[JWAlertView alloc] initWithTitle:@"警告" content:@"这是一个弹框警告" items:tempItems2];

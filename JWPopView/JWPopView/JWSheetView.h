@@ -106,6 +106,11 @@
  */
 @property (nonatomic, copy) NSString *itemTextCancel;
 
+/**
+ *  蒙板颜色，Default is [UIColor jw_colorWithHex:0x0000007F]
+ */
+@property (nonatomic, strong) UIColor *attachedViewColor;
+
 @end
 
 

@@ -91,6 +91,13 @@ typedef void(^JWPopCompletionBlock)(JWPopView *, BOOL);
 - (void)showWithBlock:(JWPopCompletionBlock)block;
 
 /**
+ *  展示方法，带收起完成回调Block
+ *
+ *  @param block 收起完成回调Block
+ */
+- (void)showWithHideBlock:(JWPopCompletionBlock)block;
+
+/**
  *  隐藏方法
  */
 - (void)hide;

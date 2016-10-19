@@ -45,13 +45,15 @@
     NSArray *tempItems = @[cancelItem,okItem,confirmItem];
     
     JWAlertView *alert = [[JWAlertView alloc] initWithTitle:@"警告" content:@"这是一个弹框警告" items:tempItems];
-    [alert show];
+    //[alert show];
     
     [[JWAlertViewConfig globalConfig] setAttachedViewColor:[UIColor jw_colorWithHex:0x0000007F]];
     
     NSArray *tempItems2 = @[cancelItem,confirmItem];
     JWAlertView *alert2 = [[JWAlertView alloc] initWithTitle:@"警告" content:@"这是一个弹框警告" items:tempItems2];
-    [alert2 show];
+    [alert2 showWithHideBlock:^(JWPopView *p, BOOL b) {
+        NSLog(@"收起完成");
+    }];
 }
 
 - (IBAction)alertClearColor:(id)sender {

@@ -294,9 +294,31 @@
     }
 }
 
+- (void)showWithHideBlock:(JWPopCompletionBlock)block
+{
+    self.hideCompletionBlock = block;
+    
+    if (!self.attachedView)
+    {
+        self.attachedView = [JWPopWindow shareWindow].attachView;
+    }
+    [self.attachedView jw_showDimBackground];
+    
+    JWPopAnimationBlock showAnimation = self.showAnimationBlock;
+    
+    NSAssert(showAnimation, @"展示动画没有怎么行?");
+    
+    showAnimation(self);
+    
+    if (self.withKeyboard)
+    {
+        [self showKeyboard];
+    }
+}
+
 - (void)hide
 {
-    [self hideWithBlock:nil];
+    [self hideWithBlock:(self.hideCompletionBlock ? self.hideCompletionBlock : nil)];
 }
 
 - (void)hideWithBlock:(JWPopCompletionBlock)block

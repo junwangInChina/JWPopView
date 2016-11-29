@@ -80,7 +80,7 @@
         {
             [self.attachedView.jw_dimBackgroundView addSubview:self];
             [self mas_updateConstraints:^(MASConstraintMaker *make) {
-                make.center.equalTo(self.attachedView).centerOffset(CGPointMake(0, self.withKeyboard ? - 216 : 0));
+                make.center.equalTo(self.attachedView).centerOffset(CGPointMake(0, self.withKeyboard ? -216/2 : 0));
             }];
             [self layoutIfNeeded];
         }
@@ -215,7 +215,7 @@
         [UIView animateWithDuration:self.animationDuration delay:0.0 options:UIViewAnimationOptionCurveEaseOut | UIViewAnimationOptionBeginFromCurrentState animations:^{
             
             [self mas_updateConstraints:^(MASConstraintMaker *make) {
-                make.center.equalTo(self.attachedView).with.centerOffset(CGPointMake(0, self.withKeyboard ? -216 : 0));
+                make.center.equalTo(self.attachedView).with.centerOffset(CGPointMake(0, self.withKeyboard ? -216/2 : 0));
             }];
             [self layoutIfNeeded];
             

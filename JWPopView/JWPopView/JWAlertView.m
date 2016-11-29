@@ -47,6 +47,7 @@
                        content:content
                          items:items
                    placeholder:nil
+                   defaultText:nil
                        handler:nil];
 }
 
@@ -66,6 +67,28 @@
                        content:content
                          items:tempItems
                    placeholder:placeholder
+                   defaultText:nil
+                       handler:handler];
+}
+
+- (instancetype)initWithTitle:(NSString *)title
+                      content:(NSString *)content
+                  placeholder:(NSString *)placeholder
+                  defaultText:(NSString *)defaultText
+                      handler:(JWAlertInputHandler)handler
+{
+    JWAlertViewConfig *tempConfig = [JWAlertViewConfig globalConfig];
+    
+    NSArray *tempItems = @[
+                           JWItemMake(tempConfig.itemTextCancel, JWItemTypeNormal, nil),
+                           JWItemMake(tempConfig.itemTextConfirm, JWItemTypeHighlight, nil)
+                           ];
+    
+    return [self initWithTitle:title
+                       content:content
+                         items:tempItems
+                   placeholder:placeholder
+                   defaultText:defaultText
                        handler:handler];
 }
 
@@ -73,6 +96,7 @@
                       content:(NSString *)content
                         items:(NSArray *)items
                   placeholder:(NSString *)placeholder
+                  defaultText:(NSString *)defaultText
                       handler:(JWAlertInputHandler)handler
 {
     self = [super init];
@@ -167,6 +191,7 @@
             _inputTextField.leftViewMode = UITextFieldViewModeAlways;
             _inputTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
             _inputTextField.placeholder = placeholder;
+            _inputTextField.text = defaultText;
             [self addSubview:_inputTextField];
             
             [self.inputTextField mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -305,6 +330,16 @@
             tempItem.handler(tempButton.tag - 1000);
         }
     }
+}
+
+- (void)showKeyboard
+{
+    [self.inputTextField becomeFirstResponder];
+}
+
+- (void)hideKeyboard
+{
+    [self.inputTextField resignFirstResponder];
 }
 
 /*

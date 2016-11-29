@@ -52,12 +52,30 @@ typedef void(^JWAlertInputHandler)(NSString *inputText);
                       handler:(JWAlertInputHandler)handler;
 
 /**
+ *  初始化方法，加输入框的
+ *
+ *  @param title       标题
+ *  @param content     内容
+ *  @param placeholder 输入框默认提示语
+ *  @param defaultText 输入框默认值
+ *  @param handler     输入回调
+ *
+ *  @return 返回当前类的实例
+ */
+- (instancetype)initWithTitle:(NSString *)title
+                      content:(NSString *)content
+                  placeholder:(NSString *)placeholder
+                  defaultText:(NSString *)defaultText
+                      handler:(JWAlertInputHandler)handler;
+
+/**
  *  初始化方法，总方法
  *
  *  @param title       标题
  *  @param content     内容
  *  @param items       按钮数组
  *  @param placeholder 输入框默认提示语
+ *  @param defaultText 输入框默认值
  *  @param handler     输入回调
  *
  *  @return 返回当前类的实例
@@ -66,6 +84,7 @@ typedef void(^JWAlertInputHandler)(NSString *inputText);
                       content:(NSString *)content
                         items:(NSArray *)items
                   placeholder:(NSString *)placeholder
+                  defaultText:(NSString *)defaultText
                       handler:(JWAlertInputHandler)handler;
 
 @end

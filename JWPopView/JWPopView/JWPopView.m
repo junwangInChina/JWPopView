@@ -82,7 +82,7 @@
             [self mas_updateConstraints:^(MASConstraintMaker *make) {
                 make.center.equalTo(self.attachedView).centerOffset(CGPointMake(0, self.withKeyboard ? -216/2 : 0));
             }];
-            [self layoutIfNeeded];
+            [self.superview layoutIfNeeded];
         }
         self.layer.transform = CATransform3DMakeScale(1.3f, 1.3f, 1.3f);
         self.alpha = 0.0f;
@@ -146,15 +146,17 @@
                 make.centerX.equalTo(self.attachedView);
                 make.bottom.equalTo(self.attachedView).offset(self.attachedView.frame.size.height);
             }];
-            [self layoutIfNeeded];
+            [self.superview layoutIfNeeded];
         }
         
-        [UIView animateWithDuration:self.animationDuration delay:0.0 usingSpringWithDamping:0.7 initialSpringVelocity:0.7 options:UIViewAnimationOptionCurveEaseOut | UIViewAnimationOptionBeginFromCurrentState animations:^{
+        [UIView animateWithDuration:self.animationDuration delay:0 usingSpringWithDamping:0.7 initialSpringVelocity:0.7 options:UIViewAnimationOptionCurveEaseOut | UIViewAnimationOptionBeginFromCurrentState animations:^{
             
             [self mas_updateConstraints:^(MASConstraintMaker *make) {
+                make.width.equalTo(self.attachedView);
+                make.centerX.equalTo(self.attachedView);
                 make.bottom.equalTo(self.attachedView);
             }];
-            [self layoutIfNeeded];
+            [self.superview layoutIfNeeded];
             
         } completion:^(BOOL finished) {
             
@@ -179,7 +181,7 @@
             [self mas_updateConstraints:^(MASConstraintMaker *make) {
                 make.bottom.equalTo(self.attachedView).offset(self.attachedView.frame.size.height);
             }];
-            [self layoutIfNeeded];
+            [self.superview layoutIfNeeded];
             
         } completion:^(BOOL finished) {
             
@@ -209,7 +211,7 @@
             [self mas_updateConstraints:^(MASConstraintMaker *make) {
                 make.center.equalTo(self.attachedView).with.centerOffset(CGPointMake(0, -self.attachedView.bounds.size.height));
             }];
-            [self layoutIfNeeded];
+            [self.superview layoutIfNeeded];
         }
         
         [UIView animateWithDuration:self.animationDuration delay:0.0 options:UIViewAnimationOptionCurveEaseOut | UIViewAnimationOptionBeginFromCurrentState animations:^{
@@ -217,7 +219,7 @@
             [self mas_updateConstraints:^(MASConstraintMaker *make) {
                 make.center.equalTo(self.attachedView).with.centerOffset(CGPointMake(0, self.withKeyboard ? -216/2 : 0));
             }];
-            [self layoutIfNeeded];
+            [self.superview layoutIfNeeded];
             
         } completion:^(BOOL finished) {
             

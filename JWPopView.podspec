@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "JWPopView"
-  s.version      = "0.0.5"
+  s.version      = "0.0.7"
   s.summary      = "JWPopView，一款自用的弹框控件。\n1:修改了Sheet无Title、无Content时，高度计算错误的问题。\n2:新增了蒙板颜色修改的功能。\n3:新增了收起回调"
 
   #主页
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   #支持版本
   s.platform     = :ios, "7.0"
   #版本地址
-  s.source       = { :git => "https://github.com/junwangInChina/JWPopView.git", :tag => "0.0.5" }
+  s.source       = { :git => "https://github.com/junwangInChina/JWPopView.git", :tag => "0.0.7" }
  
 
   #库文件路径（相对于.podspec文件的路径）

@@ -19,4 +19,6 @@
 
 - (void)cacheWindow;
 
+- (void)clearAll;
+
 @end

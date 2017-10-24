@@ -57,6 +57,21 @@
     self.hidden = YES;
 }
 
+- (void)clearAll
+{
+    if (!self.jw_dimBackgroundAnimating)
+    {
+        for (UIView *tempView in [self attachView].jw_dimBackgroundView.subviews)
+        {
+            if ([tempView isKindOfClass:[JWPopView class]])
+            {
+                JWPopView *tempPopView = (JWPopView *)tempView;
+                [tempPopView hide];
+            }
+        }
+    }
+}
+
 - (void)tapGestureAction:(UITapGestureRecognizer *)gesture
 {
     if (!self.jw_dimBackgroundAnimating)

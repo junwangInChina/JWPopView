@@ -30,8 +30,10 @@
     self.type = JWPopTypeAlert;
     self.animationDuration = 0.3f;
     self.attachedView = [JWPopWindow shareWindow].attachView;
+    self.touchDismiss = YES;
 }
 
+#pragma mark getter
 - (BOOL)visible
 {
     if (self.attachedView)
@@ -40,6 +42,8 @@
     }
     return NO;
 }
+
+#pragma mark - setter
 
 - (void)setType:(JWPopType)type
 {
@@ -320,6 +324,12 @@
 
 - (void)hide
 {
+    [self hideWithBlock:(self.hideCompletionBlock ? self.hideCompletionBlock : nil)];
+}
+
+- (void)hideInTouch
+{
+    if (!self.touchDismiss) return;
     [self hideWithBlock:(self.hideCompletionBlock ? self.hideCompletionBlock : nil)];
 }
 

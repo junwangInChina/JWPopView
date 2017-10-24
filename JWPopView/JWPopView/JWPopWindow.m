@@ -34,7 +34,6 @@
     if (self)
     {
         self.windowLevel = UIWindowLevelStatusBar + 1;
-        self.touchWhildHide = YES;
         
         UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureAction:)];
         tapGesture.cancelsTouchesInView = NO;
@@ -60,14 +59,14 @@
 
 - (void)tapGestureAction:(UITapGestureRecognizer *)gesture
 {
-    if (self.touchWhildHide && !self.jw_dimBackgroundAnimating)
+    if (!self.jw_dimBackgroundAnimating)
     {
         for (UIView *tempView in [self attachView].jw_dimBackgroundView.subviews)
         {
             if ([tempView isKindOfClass:[JWPopView class]])
             {
                 JWPopView *tempPopView = (JWPopView *)tempView;
-                [tempPopView hide];
+                [tempPopView hideInTouch];
             }
         }
     }

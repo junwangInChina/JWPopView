@@ -51,6 +51,7 @@
     
     NSArray *tempItems2 = @[cancelItem,confirmItem];
     JWAlertView *alert2 = [[JWAlertView alloc] initWithTitle:@"警告" content:@"这是一个弹框警告" items:tempItems2];
+    alert2.touchDismiss = NO;
     [alert2 showWithHideBlock:^(JWPopView *p, BOOL b) {
         NSLog(@"收起完成");
     }];

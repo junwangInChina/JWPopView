@@ -11,10 +11,6 @@
 @interface JWPopWindow : UIWindow
 
 /**
- *  点击背景收起弹框属性，default is YES
- */
-@property (nonatomic, assign) BOOL touchWhildHide;
-/**
  *  展示弹框的View
  */
 @property (nonatomic, readonly) UIView *attachView;

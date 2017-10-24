@@ -45,6 +45,10 @@ typedef void(^JWPopCompletionBlock)(JWPopView *, BOOL);
  */
 @property (nonatomic, assign ,readonly) BOOL           visible;
 /**
+ *  触摸背景收起，default is YES
+ */
+@property (nonatomic, assign)           BOOL           touchDismiss;
+/**
  *  附加View，展示在哪个View上，default is JWWindow
  */
 @property (nonatomic, strong          ) UIView         *attachedView;
@@ -103,6 +107,11 @@ typedef void(^JWPopCompletionBlock)(JWPopView *, BOOL);
 - (void)hide;
 
 /**
+ *  触摸背景，隐藏
+ */
+- (void)hideInTouch;
+
+/**
  *  隐藏方法，带隐藏完成回调Block
  *
  *  @param block 隐藏完成回调Block
@@ -110,7 +119,7 @@ typedef void(^JWPopCompletionBlock)(JWPopView *, BOOL);
 - (void)hideWithBlock:(JWPopCompletionBlock)block;
 
 /**
- *  展示所有
+ *  隐藏所有
  */
 - (void)hideAll;
 

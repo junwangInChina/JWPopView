@@ -33,6 +33,20 @@
 - (instancetype)initWithTitle:(NSString *)title
                       content:(NSString *)content
                         items:(NSArray *)items;
+/**
+ *  初始化方法
+ *
+ *  @param title          标题
+ *  @param content        内容
+ *  @param items          按钮数组
+ *  @param fitToiPhoneX   是否适配iPhoneX，default is YES
+ *
+ *  @return 返回当前类的实例
+ */
+- (instancetype)initWithTitle:(NSString *)title
+                      content:(NSString *)content
+                        items:(NSArray *)items
+                 fitToiPhoneX:(BOOL)fitToiPhoneX;
 
 @end
 

@@ -12,6 +12,11 @@
 #define JWStrongify(o)      __strong typeof(self) o = mmwo;
 #define JW_SPLIT_WIDTH      (1/[UIScreen mainScreen].scale)
 
+#define JW_IPHONE_X_HEIGHT  (812.0)
+#define JW_FOOTER_SAFE_AREA_HEIGHT (JW_SCREEN_HEIGHT == JW_IPHONE_X_HEIGHT ? 34 : 0)
+#define JW_SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define JW_SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
 #define JWAlertTag      520
 #define JWSheetTag      521
 

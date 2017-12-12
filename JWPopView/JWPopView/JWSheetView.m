@@ -37,6 +37,18 @@
                       content:(NSString *)content
                         items:(NSArray *)items
 {
+    return [self initWithTitle:title
+                       content:content
+                         items:items
+                  fitToiPhoneX:YES];
+    
+}
+
+- (instancetype)initWithTitle:(NSString *)title
+                      content:(NSString *)content
+                        items:(NSArray *)items
+                 fitToiPhoneX:(BOOL)fitToiPhoneX
+{
     self = [super init];
     if (self)
     {
@@ -200,11 +212,12 @@
                           action:@selector(cancelAction:)
                 forControlEvents:UIControlEventTouchUpInside];
         _cancelButton.titleLabel.font = tempConfig.itemFont;
+        _cancelButton.titleEdgeInsets = UIEdgeInsetsMake(0, 0, (fitToiPhoneX ? JW_FOOTER_SAFE_AREA_HEIGHT : 0), 0);
         [self addSubview:_cancelButton];
         
         [self.cancelButton mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.and.right.equalTo(self);
-            make.height.equalTo(@(tempConfig.itemHeight));
+            make.height.mas_equalTo((tempConfig.itemHeight + (fitToiPhoneX ? JW_FOOTER_SAFE_AREA_HEIGHT : 0)));
             make.top.equalTo(lastAttribute);
         }];
         

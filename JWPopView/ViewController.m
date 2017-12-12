@@ -91,7 +91,7 @@
     
     NSArray *tempItems = @[cancelItem,okItem,confirmItem];
     
-    JWSheetView *sheet = [[JWSheetView alloc] initWithTitle:@"标题" content:@"这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet," items:tempItems];
+    JWSheetView *sheet = [[JWSheetView alloc] initWithTitle:@"标题" content:@"这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet,这是一个ActionSheet," items:tempItems fitToiPhoneX:YES];
     [sheet show];
 }
 

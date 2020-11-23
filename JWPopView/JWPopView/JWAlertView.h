@@ -29,12 +29,14 @@ typedef void(^JWAlertInputHandler)(NSString *inputText);
  *  @param title   标题
  *  @param content 内容
  *  @param items   按钮数组
+ *  @param textAlignment 对齐方式
  *
  *  @return 返回当前类的实例
  */
 - (instancetype)initWithTitle:(NSString *)title
                       content:(NSString *)content
-                        items:(NSArray *)items;
+                        items:(NSArray *)items
+                textAlignment:(NSTextAlignment)textAlignment;
 
 /**
  *  初始化方法，加输入框的
@@ -77,6 +79,7 @@ typedef void(^JWAlertInputHandler)(NSString *inputText);
  *  @param placeholder 输入框默认提示语
  *  @param defaultText 输入框默认值
  *  @param handler     输入回调
+ *  @param textAlignment 对齐方式
  *
  *  @return 返回当前类的实例
  */
@@ -85,7 +88,8 @@ typedef void(^JWAlertInputHandler)(NSString *inputText);
                         items:(NSArray *)items
                   placeholder:(NSString *)placeholder
                   defaultText:(NSString *)defaultText
-                      handler:(JWAlertInputHandler)handler;
+                      handler:(JWAlertInputHandler)handler
+                textAlignment:(NSTextAlignment)textAlignment;
 
 @end
 

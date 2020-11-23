@@ -36,19 +36,22 @@
                            ];
     return [self initWithTitle:title
                        content:content
-                         items:tempItems];
+                         items:tempItems
+                 textAlignment:NSTextAlignmentCenter];
 }
 
 - (instancetype)initWithTitle:(NSString *)title
                       content:(NSString *)content
                         items:(NSArray *)items
+                textAlignment:(NSTextAlignment)textAlignment
 {
     return [self initWithTitle:title
                        content:content
                          items:items
                    placeholder:nil
                    defaultText:nil
-                       handler:nil];
+                       handler:nil
+                 textAlignment:textAlignment];
 }
 
 - (instancetype)initWithTitle:(NSString *)title
@@ -68,7 +71,8 @@
                          items:tempItems
                    placeholder:placeholder
                    defaultText:nil
-                       handler:handler];
+                       handler:handler
+                 textAlignment:NSTextAlignmentCenter];
 }
 
 - (instancetype)initWithTitle:(NSString *)title
@@ -89,7 +93,8 @@
                          items:tempItems
                    placeholder:placeholder
                    defaultText:defaultText
-                       handler:handler];
+                       handler:handler
+                 textAlignment:NSTextAlignmentCenter];
 }
 
 - (instancetype)initWithTitle:(NSString *)title
@@ -98,6 +103,8 @@
                   placeholder:(NSString *)placeholder
                   defaultText:(NSString *)defaultText
                       handler:(JWAlertInputHandler)handler
+                textAlignment:(NSTextAlignment)textAlignment
+
 {
     self = [super init];
     if (self)
@@ -164,7 +171,7 @@
             _contentLabel.textColor = tempConfig.contentColor;
             _contentLabel.font = tempConfig.contentFont;
             _contentLabel.numberOfLines = 0;
-            _contentLabel.textAlignment = NSTextAlignmentCenter;
+            _contentLabel.textAlignment = textAlignment;
             _contentLabel.text = content;
             [self addSubview:_contentLabel];
             

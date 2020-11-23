@@ -40,7 +40,8 @@
     return [self initWithTitle:title
                        content:content
                          items:items
-                  fitToiPhoneX:YES];
+                  fitToiPhoneX:YES
+                 textAlignment:NSTextAlignmentCenter];
     
 }
 
@@ -48,6 +49,8 @@
                       content:(NSString *)content
                         items:(NSArray *)items
                  fitToiPhoneX:(BOOL)fitToiPhoneX
+                textAlignment:(NSTextAlignment)textAlignment;
+
 {
     self = [super init];
     if (self)
@@ -106,7 +109,7 @@
             _contentLabel.textColor = tempConfig.contentColor;
             _contentLabel.font = tempConfig.contentFont;
             _contentLabel.numberOfLines = 0;
-            _contentLabel.textAlignment = NSTextAlignmentCenter;
+            _contentLabel.textAlignment = textAlignment;
             _contentLabel.text = content;
             [self addSubview:_contentLabel];
             

@@ -36,7 +36,16 @@
                            ];
     return [self initWithTitle:title
                        content:content
-                         items:tempItems
+                         items:tempItems];
+}
+
+- (instancetype)initWithTitle:(NSString *)title
+                      content:(NSString *)content
+                        items:(NSArray *)items
+{
+    return [self initWithTitle:title
+                       content:content
+                         items:items
                  textAlignment:NSTextAlignmentCenter];
 }
 

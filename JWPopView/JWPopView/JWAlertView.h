@@ -29,6 +29,19 @@ typedef void(^JWAlertInputHandler)(NSString *inputText);
  *  @param title   标题
  *  @param content 内容
  *  @param items   按钮数组
+ *
+ *  @return 返回当前类的实例
+ */
+- (instancetype)initWithTitle:(NSString *)title
+                      content:(NSString *)content
+                        items:(NSArray *)items;
+
+/**
+ *  初始化方法，按钮由用户决定
+ *
+ *  @param title   标题
+ *  @param content 内容
+ *  @param items   按钮数组
  *  @param textAlignment 对齐方式
  *
  *  @return 返回当前类的实例

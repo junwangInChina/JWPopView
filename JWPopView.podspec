@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "JWPopView"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = "JWPopView，一款自用的弹框控件。\n1:修改了Sheet无Title、无Content时，高度计算错误的问题。\n2:新增了蒙板颜色修改的功能。\n3:新增了收起回调。\n4:适配iPhoneX"
 
   #主页
